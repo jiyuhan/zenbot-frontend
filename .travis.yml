@@ -9,7 +9,7 @@ before_install:
 install:
     - npm install
 script:
-    - CI=true npm test
+    - npm test
     - npm run build
 after_success:
     - curl -X POST -d {} https://api.netlify.com/build_hooks/5d5637291af2ec337b7a8fad
